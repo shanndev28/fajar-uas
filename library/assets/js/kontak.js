@@ -1,31 +1,25 @@
 document.getElementById('batal').addEventListener('click', function () {
     document.getElementById('nama').value = ''
-    document.getElementById('pesan').value = ''
-    document.getElementById('email').value = ''
-    document.getElementById('subjek').value = ''
+    document.getElementById('kota').value = ''
+    document.getElementById('alamat').value = ''
+    document.getElementById('komentar').value = ''
 })
 
 document.getElementById('kirim').addEventListener('click', function () {
     let nama = document.getElementById('nama').value
-    let pesan = document.getElementById('pesan').value
-    let email = document.getElementById('email').value
-    let subjek = document.getElementById('subjek').value
+    let kota = document.getElementById('kota').value
+    let alamat = document.getElementById('alamat').value
+    let komentar = document.getElementById('komentar').value
 
-    if (nama === '' || pesan === '' || email === '' || subjek === '') {
+    if (nama === '' || komentar === '' || kota === '' || alamat === '') {
         alert('Harap mengisi semua input')
-    } else if (!/@/.test(email)) {
-        alert('Masukkan email dengan benar')
     } else {
-        if (!['gmail.com', 'yahoo.com', 'outlook.com'].includes(email.split('@')[1])) {
-            alert('Email tidak didukung')
-        } else {
-            alert(`terimakasih kak ${nama}, pesan kamu sudah berhasil terkirim :)`)
+        alert(`terimakasih kak ${nama}, komentar kamu sudah berhasil terkirim :)`)
 
-            document.getElementById('nama').value = ''
-            document.getElementById('pesan').value = ''
-            document.getElementById('email').value = ''
-            document.getElementById('subjek').value = ''
-        }
+        document.getElementById('nama').value = ''
+        document.getElementById('kota').value = ''
+        document.getElementById('alamat').value = ''
+        document.getElementById('komentar').value = ''
     }
 
 })

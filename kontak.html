@@ -17,8 +17,9 @@
     <section class="header">
         <div class="nav-content">
             <div class="nav-brand">
-                <h3 id="ucapan">selamat siang</h3>
-                <h6 id="tanggal">sabtu, 16 desember 2023</h6>
+                <span id="ucapan">selamat pagi</span>
+                <br>
+                <span id="tanggal">sabtu, 16 desember 2023</span>
             </div>
             <div class="flex">
                 <a href="index.html" class="nav-link">home</a>
@@ -42,16 +43,21 @@
                 <input type="text" id="nama" class="form-input" autocomplete="off" placeholder="Masukkan nama">
             </div>
             <div class="form-control">
-                <label for="email">e-mail</label>
-                <input type="email" id="email" class="form-input" autocomplete="off" placeholder="Masukkan e-mail">
+                <label for="kota">kota</label>
+                <select name="kota" id="kota" class="form-select">
+                    <option value="">Pilih salah satu</option>
+                    <option value="bogor">Bogor</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="bandung">Bandung</option>
+                </select>
             </div>
             <div class="form-control">
-                <label for="subjek">subjek</label>
-                <input type="text" id="subjek" class="form-input" autocomplete="off" placeholder="Masukkan subjek">
+                <label for="alamat">alamat</label>
+                <input type="text" id="alamat" class="form-input" autocomplete="off" placeholder="Masukkan alamat">
             </div>
             <div class="form-control">
-                <label for="pesan">pesan</label>
-                <textarea type="text" id="pesan" class="form-input" placeholder="Masukkan pesan"></textarea>
+                <label for="komentar">komentar</label>
+                <textarea type="text" id="komentar" class="form-input" placeholder="Masukkan komentar"></textarea>
             </div>
             <div class="button-kontak">
                 <button type="button" id="batal">batal</button>

@@ -73,7 +73,8 @@ p {
 }
 
 .header .nav-content .nav-brand {
-    font-weight: 800;
+    font-weight: 600;
+    font-size: .8rem;
     text-align: center;
     text-transform: capitalize;
 }
@@ -240,6 +241,15 @@ p {
     height: 40px;
     margin-top: 5px;
     padding: 1rem 1em;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(118, 118, 118);
+}
+
+.content .kontak .form-control .form-select {
+    width: 100%;
+    margin-top: 5px;
+    padding: .6rem .6em;
     border-radius: 5px;
     margin-bottom: 20px;
     border: 1px solid rgb(118, 118, 118);
